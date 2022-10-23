@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <p id="backtotop"></p>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" style=background-color:#f39aaf;">
+            <div class="container-fluid"><a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../Pages/calculadoraimc.html">Calculadora
+                                IMC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Pages/comidas.html">Comidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+
+                    <button type="button" class="btn btn-outline-light" style=background-color:#d28697> <a
+                            style="text-decoration: none;" href="../Pages/registro.html">Sign Up</a></button>
+                    <button type="button" class="btn btn-outline-light" style=background-color:#d28697> <a
+                            style="text-decoration: none;" href="../Pages/logueo.html">Sign In</a></button>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="titulo">Calculadora IMC</h1>
+        <br>
+        <p id="texto">El Índice de Masa Corporal (IMC) es una medida de asociación entre el peso y la talla de una
+            persona.
+            El IMC es
+            usado como uno de varios indicadores para evaluar el estado nutricional.<br>
+
+            El IMC constituye la medida poblacional más útil del sobrepeso y la obesidad, pues la forma de calcularlo no
+            varía en función del sexo ni de la edad en la población adulta. No obstante, debe considerarse como una guía
+            aproximativa, pues puede no corresponder al mismo grado de gordura en diferentes individuos.<br>
+
+            La Organización Mundial de la Salud, ha propuesto una clasificación del estado nutricional dependiendo del
+            IMC
+            de una persona.</p>
+
+        <img src="../Multimedia/Imagenes/blog_IMC.webp" alt="imc"><br>
+
+        <div>
+            <form>
+                <br>
+                <h2>Calcula tu Indice de Masa Corporal</h2>
+
+                <div id="input-fields">
+
+                    <br><input type="text" style="width: 250px; ;" class="form-control" id="peso"
+                        placeholder="Su peso en kilogramos"> <br>
+                    <input type="text" style="width: 250px" class=" form-control" id="altura"
+                        placeholder="Su altura en metros"> <br>
+
+                    <button type="submit" name="imc" id="Calcular" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)" border="0">Calcular</button>
+                </div><br>
+
+                <div id="container">
+                    <ul>
+                        <ol><b>BAJO DE PESO:</b> el IMC es inferior a 18.5</ol>
+                        <ol><b>NORMAL:</b> el IMC es de 18.5 a 24.9</ol>
+                        <ol><b>SOBREPESO:</b> el IMC es de 25 a 29.9</ol>
+                        <ol><b>OBESIDAD I:</b> el IMC es de 30 a 39.9</ol>
+                        <ol><b>OBESIDAD II:</b> el IMC es superior a 40</ol>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <button type="button" class="btn btn-outline-light" style=background-color:#f39aaf>
+            <div id="Arriba">
+                <a href="#backtotop" style="text-decoration:none">Volver arriba</a>
+            </div>
+        </button>
+    </footer>
+    <script type="text/javascript" src="../calculadoraimc.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
